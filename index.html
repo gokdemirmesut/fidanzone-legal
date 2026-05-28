@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FidanZone - Yasal Sayfalar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f7f4; color: #111827; }
+    header { background: #2D5016; color: white; padding: 20px; text-align: center; }
+    header h1 { font-size: 24px; font-weight: 800; }
+    header p { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+    nav { display: flex; justify-content: center; gap: 12px; background: #fff; padding: 16px; border-bottom: 1px solid #e5e7eb; flex-wrap: wrap; }
+    nav a { color: #2D5016; font-weight: 600; text-decoration: none; padding: 8px 20px; border-radius: 999px; border: 2px solid #2D5016; font-size: 14px; }
+    nav a:hover, nav a.active { background: #2D5016; color: white; }
+    .page { display: none; max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    .page.active { display: block; }
+    .page h2 { font-size: 28px; font-weight: 800; color: #2D5016; margin-bottom: 8px; }
+    .page .subtitle { font-size: 14px; color: #6b7280; margin-bottom: 32px; }
+    .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 1px solid #f3f4f6; }
+    .card h3 { font-size: 16px; font-weight: 700; color: #111827; margin-bottom: 10px; }
+    .card p { font-size: 14px; color: #4b5563; line-height: 1.7; }
+    .danger { background: #fff0f0; border: 1px solid #fecaca; }
+    .danger h3 { color: #ef4444; }
+    .delete-btn { display: inline-block; margin-top: 14px; background: #ef4444; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; cursor: pointer; border: none; }
+    .info { background: #f0fdf4; border: 1px solid #d1fae5; }
+    .info h3 { color: #059669; }
+    footer { text-align: center; padding: 32px; color: #9ca3af; font-size: 13px; }
+    .date { font-size: 12px; color: #9ca3af; text-align: right; margin-top: 24px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌳 FidanZone</h1>
+  <p>Türkiye'nin Fidan & Bitki Platformu</p>
+</header>
+
+<nav>
+  <a href="#" class="active" onclick="showPage('anasayfa', this)">Ana Sayfa</a>
+  <a href="#" onclick="showPage('gizlilik', this)">Gizlilik Politikası</a>
+  <a href="#" onclick="showPage('kosullar', this)">Kullanım Koşulları</a>
+  <a href="#" onclick="showPage('silme', this)">Veri Silme</a>
+</nav>
+
+<!-- ANA SAYFA -->
+<div id="anasayfa" class="page active">
+  <br/>
+  <h2>Yasal Bilgiler</h2>
+  <p class="subtitle">FidanZone uygulamasına ait gizlilik politikası, kullanım koşulları ve veri silme talebi sayfaları.</p>
+  <div class="card info">
+    <h3>📱 FidanZone Nedir?</h3>
+    <p>FidanZone, Türkiye'deki fidan, bitki, tohum ve bahçe malzemeleri alıcı ile satıcılarını bir araya getiren ücretsiz bir ilan platformudur. Uygulama içinde doğrudan satış yapılmaz; kullanıcılar ilan açar ve birbirleriyle iletişime geçer.</p>
+  </div>
+  <div class="card">
+    <h3>📄 Sayfalar</h3>
+    <p>• <strong>Gizlilik Politikası:</strong> Hangi verileri topladığımız ve nasıl kullandığımız.<br/><br/>
+       • <strong>Kullanım Koşulları:</strong> Uygulamayı kullanma kuralları ve şartlar.<br/><br/>
+       • <strong>Veri Silme:</strong> Hesabınızı ve tüm verilerinizi silme talebi.</p>
+  </div>
+  <div class="card">
+    <h3>📬 İletişim</h3>
+    <p>Sorularınız için: <strong>destek@fidanzone.com</strong><br/>
+    Gizlilik talepleri: <strong>gizlilik@fidanzone.com</strong></p>
+  </div>
+</div>
+
+<!-- GİZLİLİK POLİTİKASI -->
+<div id="gizlilik" class="page">
+  <br/>
+  <h2>Gizlilik Politikası</h2>
+  <p class="subtitle">FidanZone uygulaması gizlilik politikası</p>
+
+  <div class="card">
+    <h3>Hangi Verileri Topluyoruz?</h3>
+    <p>• Ad ve soyad<br/>
+       • E-posta adresi<br/>
+       • Telefon numarası (isteğe bağlı)<br/>
+       • Şehir bilgisi (GPS verisi toplanmaz)<br/>
+       • İlan içerikleri ve fotoğraflar<br/>
+       • Mesaj içerikleri (yalnızca iletişim için)</p>
+  </div>
+
+  <div class="card">
+    <h3>Verileri Nasıl Kullanıyoruz?</h3>
+    <p>Toplanan veriler yalnızca platformun çalışması için kullanılır. Verileriniz üçüncü taraflarla pazarlama amacıyla paylaşılmaz. İlan bilgileri diğer kullanıcılar tarafından görülebilir. Kişisel iletişim bilgileriniz (telefon) yalnızca sizin paylaşmayı seçtiğinizde görünür.</p>
+  </div>
+
+  <div class="card">
+    <h3>Veri Güvenliği</h3>
+    <p>Verileriniz Supabase altyapısında şifreli olarak saklanır. Şifreler hiçbir zaman düz metin olarak tutulmaz. Tüm bağlantılar HTTPS ile şifrelenir. Verilerinize yetkisiz erişimi önlemek için endüstri standardı güvenlik önlemleri uygulanır.</p>
+  </div>
+
+  <div class="card">
+    <h3>Çerezler ve Takip</h3>
+    <p>Uygulama reklam amacıyla çerez veya izleme teknolojisi kullanmaz. Yalnızca oturum bilgisi cihazınızda yerel olarak saklanır. Üçüncü taraf reklam ağları kullanılmaz.</p>
+  </div>
+
+  <div class="card">
+    <h3>Verilerinizi Yönetme</h3>
+    <p>Profil sayfasından kişisel bilgilerinizi her zaman güncelleyebilirsiniz. Hesabınızı sildiğinizde tüm verileriniz 30 gün içinde kalıcı olarak kaldırılır. Veri silme talebinizi uygulama içinden veya bu sayfadaki "Veri Silme" bölümünden yapabilirsiniz.</p>
+  </div>
+
+  <div class="card">
+    <h3>Çocukların Gizliliği</h3>
+    <p>FidanZone yalnızca 18 yaş ve üzeri kullanıcılara yöneliktir. 18 yaş altı bireylerin kişisel verilerini bilerek toplamayız. 18 yaş altı bir kullanıcıya ait veri toplandığını fark edersek bu veriler derhal silinir.</p>
+  </div>
+
+  <div class="card">
+    <h3>İletişim</h3>
+    <p>Gizlilikle ilgili sorularınız için: <strong>gizlilik@fidanzone.com</strong></p>
+  </div>
+
+  <p class="date">Son güncelleme: Ocak 2025</p>
+</div>
+
+<!-- KULLANIM KOŞULLARI -->
+<div id="kosullar" class="page">
+  <br/>
+  <h2>Kullanım Koşulları</h2>
+  <p class="subtitle">FidanZone uygulaması kullanım koşulları</p>
+
+  <div class="card">
+    <h3>1. Hizmet Tanımı</h3>
+    <p>FidanZone, fidan, bitki ve bahçe malzemeleri alıcı ile satıcılarını bir araya getiren bir ilan platformudur. Uygulama içinde satış işlemi gerçekleştirilmez; taraflar kendi aralarında anlaşır. FidanZone bu işlemlerden sorumlu değildir.</p>
+  </div>
+
+  <div class="card">
+    <h3>2. Yaş Sınırı</h3>
+    <p>FidanZone yalnızca 18 yaş ve üzeri kullanıcılara yöneliktir. 18 yaş altı kullanıcıların hesap oluşturması yasaktır. Kayıt sırasında yaşınızı doğrulamanız gerekmektedir.</p>
+  </div>
+
+  <div class="card">
+    <h3>3. Kullanıcı Sorumlulukları</h3>
+    <p>Kullanıcılar; doğru bilgi vermeyi, yanıltıcı ilan açmamayı ve yasalara uygun davranmayı kabul eder. Sahte ilan açmak, spam göndermek, başkalarını taciz etmek veya platformu kötüye kullanmak hesabın kalıcı olarak kapatılmasına neden olur.</p>
+  </div>
+
+  <div class="card">
+    <h3>4. İlan Kuralları</h3>
+    <p>İlanlar yalnızca fidan, bitki, tohum, saksı ve bahçe malzemeleri kategorilerinde açılabilir. Canlı hayvan, ilaç, alkol veya yasadışı ürün ilanı açılamaz. Yanıltıcı fotoğraf veya açıklama kullanılamaz.</p>
+  </div>
+
+  <div class="card">
+    <h3>5. Ücretlendirme</h3>
+    <p>Temel ilan hizmetleri ücretsizdir. Öne çıkarma ve premium özellikler ücretli olabilir; bu özellikler kullanılmadan önce açık şekilde bildirim yapılır ve onay alınır.</p>
+  </div>
+
+  <div class="card">
+    <h3>6. Sorumluluk Reddi</h3>
+    <p>FidanZone, kullanıcılar arasındaki alışverişlerden, ürün kalitesinden veya teslimat sorunlarından sorumlu değildir. Taraflar arasındaki anlaşmazlıklara müdahale etmez.</p>
+  </div>
+
+  <div class="card">
+    <h3>7. Fikri Mülkiyet</h3>
+    <p>FidanZone markası, logosu ve uygulama tasarımı tescilli fikri mülkiyettir. Kullanıcılar paylaştıkları içeriklerin telif hakkına sahip olduklarını beyan eder.</p>
+  </div>
+
+  <div class="card">
+    <h3>8. Hesap Silme</h3>
+    <p>Kullanıcılar Profil → Gizlilik Politikası → Hesabımı Sil seçeneği veya bu web sitesindeki Veri Silme sayfası aracılığıyla tüm verilerini silebilir. Veriler 30 gün içinde kalıcı olarak kaldırılır.</p>
+  </div>
+
+  <div class="card">
+    <h3>9. Değişiklikler</h3>
+    <p>FidanZone bu koşulları önceden bildirerek değiştirebilir. Önemli değişiklikler uygulama içinde bildirim olarak duyurulur.</p>
+  </div>
+
+  <p class="date">Son güncelleme: Ocak 2025</p>
+</div>
+
+<!-- VERİ SİLME -->
+<div id="silme" class="page">
+  <br/>
+  <h2>Hesap ve Veri Silme</h2>
+  <p class="subtitle">KVKK ve GDPR kapsamında veri silme hakkınız</p>
+
+  <div class="card info">
+    <h3>🔐 Veri Silme Hakkınız</h3>
+    <p>Kişisel Verilerin Korunması Kanunu (KVKK) ve GDPR kapsamında, FidanZone'daki tüm kişisel verilerinizin silinmesini talep etme hakkına sahipsiniz.</p>
+  </div>
+
+  <div class="card">
+    <h3>Uygulama İçinden Silme (Önerilen)</h3>
+    <p>1. Uygulamayı açın<br/>
+       2. Alt menüden <strong>Profilim</strong>'e gidin<br/>
+       3. <strong>Gizlilik Politikası</strong>'na tıklayın<br/>
+       4. Sayfanın altındaki <strong>"Hesabımı ve Tüm Verilerimi Sil"</strong> butonuna basın<br/>
+       5. Onaylayın</p>
+  </div>
+
+  <div class="card">
+    <h3>E-posta ile Silme Talebi</h3>
+    <p>Uygulamaya erişiminiz yoksa aşağıdaki adrese e-posta gönderin:<br/><br/>
+    <strong>gizlilik@fidanzone.com</strong><br/><br/>
+    E-postanızda kayıtlı e-posta adresinizi belirtin. 30 gün içinde tüm verileriniz silinir ve size bilgi verilir.</p>
+  </div>
+
+  <div class="card">
+    <h3>Silinen Veriler</h3>
+    <p>• Profil bilgileri (ad, soyad, telefon, şehir)<br/>
+       • Tüm ilanlarınız<br/>
+       • Tüm mesajlarınız<br/>
+       • Favori listeniz<br/>
+       • Yüklenen fotoğraflar<br/>
+       • Hesap oturum bilgileri</p>
+  </div>
+
+  <div class="card danger">
+    <h3>⚠️ Önemli Uyarı</h3>
+    <p>Hesap silme işlemi geri alınamaz. Silme talebinden sonra verileriniz 30 gün içinde kalıcı olarak kaldırılır. Bu süre içinde hesabınıza giriş yaparak işlemi iptal edebilirsiniz.</p>
+  </div>
+
+  <p class="date">Son güncelleme: Ocak 2025</p>
+</div>
+
+<footer>
+  <p>© 2025 FidanZone. Tüm hakları saklıdır.</p>
+  <p style="margin-top: 8px;">destek@fidanzone.com</p>
+</footer>
+
+<script>
+  function showPage(id, el) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+    return false;
+  }
+</script>
+
+</body>
+</html>
